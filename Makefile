@@ -3,7 +3,7 @@ CFLAGS=-Wall -Wextra -Werror
 SRC=functions.c printf.c 
 OBJ=$(SRC:.c=.o)
 
-NAME=printf.a
+NAME=libftprintf.a
 
 all: $(NAME)
 

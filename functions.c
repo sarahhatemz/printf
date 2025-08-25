@@ -87,7 +87,7 @@ int ft_putptr(void *pointer)
 	unsigned long p;
 	int counter;
 	counter=0;
-	p=(unsigned long)pointer;
+	p=(size_t)pointer;
 	counter+=ft_putstr("0x");
 	ft_puthex(p,1);
 	return (counter);
