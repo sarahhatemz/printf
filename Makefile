@@ -1,14 +1,13 @@
 CC=cc
-CFLAGS=-Wall -Wextra -Werror 
-SRC=functions.c printf.c 
-OBJ=$(SRC:.c=.o)
-
 NAME=libftprintf.a
+CFLAGS=-Wall -Wextra -Werror 
+SRC=functions.c ft_printf.c
+OBJ=$(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs  $(NAME)
+	ar rcs  $(NAME) $(OBJ)
 
 clean:
 	rm -f $(OBJ)
